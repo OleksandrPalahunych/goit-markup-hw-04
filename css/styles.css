@@ -145,7 +145,7 @@ align-items: center;
 }
 /*head styles*/
  .head{
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/head/people-office1.png); 
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/head/people-office1.jpg); 
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
@@ -374,6 +374,9 @@ width: 100%;
     align-items: center;
     justify-content: center;
     color: #8e8f99;
+}
+.customers-svg{
+    fill: currentColor;
 }
  .customers-link:hover,
  .customers-link:focus{
