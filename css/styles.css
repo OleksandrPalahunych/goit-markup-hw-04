@@ -78,7 +78,10 @@ align-items: center;
 }
 .header{
     background-color: var(--primary-background-color);
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-link{
     padding: 24px 0;
@@ -212,9 +215,12 @@ background-color: var(--accent-color);
 .features-sprite{
     width: 264px;
     height: 112px;
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
 }
  .features-title{
         font-family: var(--primary-font);
@@ -300,11 +306,13 @@ background-color: var(--accent-color);
  }
  .team-social-link:hover,
  .team-social-link:focus{
-    background-color:#31D0AA;;
+    background-color:var(--accent-color);;
  }
- 
+ .team-svg{
+    fill: var(--secondary-background-color);
+ }
  .team-wraper{
-   padding: 32px 16px; 
+   padding: 32px 0px; 
  }
  .team-title{
          margin-bottom: 8px;
@@ -339,7 +347,7 @@ font-family:var(--primary-font);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height:1.1;
     text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -473,12 +481,24 @@ font-family: 'Roboto';
 color: var(--text-white-color);
 background: var(--accent-color);
 border: 1px solid transparent;
+box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12) ;
 }
 .list-projekt{
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+}
+.portfolio-link{
+    display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus{
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08) ;
 }
 .item-projekt{
   width:calc((100% - 48px) \ 3); 
